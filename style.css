@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+#bg{
+    width: 1100px;
+    height: 400px;
+    margin-bottom: 50px;
+    position: relative;
+    top: 700px;
+    left:-300px;
+    
+    /* background-position-y: center; */
+}
+#icons{
+    position: absolute;
+    top: 440px;
+    left: 79%;
+}
+.icons{
+    margin: 3px;
+    width: 15px;
+}
+#parent-container{
+    /* width:100vw; */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    z-index: 1;
+    align-self: center;
+    color: white;
+    width: 50vw;  
+    /* border-top: 0.1px inset rgba(255, 255, 255, 1); */
+    border-top: 2px inset;
+    border-image-slice: 1;
+    border-image-slice: 50;
+    border-image-source: linear-gradient(to right, rgba(255, 255, 255, 0.5), 
+                                rgba(255, 255, 255, 0.3));
+}
+#left h4{
+    margin-top: 30px;
+}
+#center{
+    margin-left: 150px;
+    /* margin-right: 120px; */
+} 
+/* .x{
+    margin-left: 250px;
+} */
+#text{
+    margin-left: 90px;
+}  
+/* #y{
+    margin-left: 100px;
+}  */
+#right{
+    z-index: 1;
+    background-color: #4b4b4b;
+    padding: 3%;
+    color: white;
+    width: 50vw;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: 10px; */
+    margin-right: 200px;
+}
+.card{
+    width: auto;
+    border-left: 0.2px solid;
+    border-image-slice: 1;
+    border-image-slice: 50;
+    border-image-source: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.3));
+    
+}
+    
+.card img{
+    width: 150px;
+}
+.color{
+    min-height: 20px;
+    width: 2px;
+    margin-left: 21px;
+    position: relative;
+    top: -30px;
+    border-radius: 50%;
+    background-color: #1e4bc5;
+    box-shadow: 0px 10px 50px 20px #1e4bc5; 
+}
+.card h4{
+    margin: 10px 0px 20px 0px;
+    padding-left: 10px;
+    color: #1e4bc5;
+    font-size: 10px;
+    font-weight: 200;
+
+}
+.card h2{
+    margin: 10px 0px 10px 0px;
+    padding-left: 10px;
+    font-size: smaller;
+    font-weight:700;
+    line-height: 1.2rem;
+}
+.card p{
+    margin: 10px 0px 10px 2px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+#card-1{
+    position: relative;
+    top: -100px;
+}
+#card-2{
+    position: relative;
+    top: -70px;
+}
+#card-3{
+    position: relative;
+    top: -21px;
+}
+h4{
+    font-size: 10px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 48px;
+    font-weight: 800;
+}
+
+button{
+    margin-top: 30px;
+    margin-left: 90px;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 15px;
+    background-image: linear-gradient(to right, rgba(255, 15, 178, 0.4),
+                             rgba(83, 129, 253, 0.6));
+    color: #fff;
+}
